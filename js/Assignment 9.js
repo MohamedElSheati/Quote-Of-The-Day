@@ -1,43 +1,43 @@
-var productNameInput=document.getElementById("productName")
-var productPriceInput=document.getElementById("productPrice")
-var productCategoryInput=document.getElementById("productCategory")
-var productSaleInput=document.getElementById("productSale")
-var productDescribtionInput=document.getElementById("productDescribtion")
+// var productNameInput=document.getElementById("productName")
+// var productPriceInput=document.getElementById("productPrice")
+// var productCategoryInput=document.getElementById("productCategory")
+// var productSaleInput=document.getElementById("productSale")
+// var productDescribtionInput=document.getElementById("productDescribtion")
 
-var productList = []
-function showData(){
-    var temp = " "
-    for(var i=0;i<productList.length;i++){
-        temp+= `<tr>
-                    <td>`+i+`</td>
-                    <td>`+productList[i].name+`</td>
-                    <td>`+productList[i].price+`</td>
-                    <td>`+productList[i].category+`</td>
-                    <td>`+productList[i].sale+`</td>
-                    <td>`+productList[i].describtion+`</td>
-                    <td><button class="btn btn-info">Update</button></td>
-                    <td><button class="btn btn-danger">Delele</button></td>
-                </tr>`
+// var productList = []
+// function showData(){
+//     var temp = " "
+//     for(var i=0;i<productList.length;i++){
+//         temp+= `<tr>
+//                     <td>`+i+`</td>
+//                     <td>`+productList[i].name+`</td>
+//                     <td>`+productList[i].price+`</td>
+//                     <td>`+productList[i].category+`</td>
+//                     <td>`+productList[i].sale+`</td>
+//                     <td>`+productList[i].describtion+`</td>
+//                     <td><button class="btn btn-info">Update</button></td>
+//                     <td><button class="btn btn-danger">Delele</button></td>
+//                 </tr>`
                 
-    }
-    document.getElementById("myData").innerHTML=temp
+//     }
+//     document.getElementById("myData").innerHTML=temp
 
-}
+// }
 
 
-function addProduct(){
-    var product = {
-        name:productNameInput.value,
-        price:productPriceInput.value,
-        category:productCategoryInput.value,
-        sale:productSaleInput.checked,
-        describtion:productDescribtionInput.value,
-    }
-    productList.push(product);
-    showData();
-    console.log(productList)
+// function addProduct(){
+//     var product = {
+//         name:productNameInput.value,
+//         price:productPriceInput.value,
+//         category:productCategoryInput.value,
+//         sale:productSaleInput.checked,
+//         describtion:productDescribtionInput.value,
+//     }
+//     productList.push(product);
+//     showData();
+//     console.log(productList)
     
-}
+// }
 
 var qoute1={
     qoutetitle:"“Be yourself; everyone else is already taken.”",
